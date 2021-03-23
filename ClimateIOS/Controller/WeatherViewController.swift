@@ -19,10 +19,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
- 
-    @IBAction func searchButtonPressed(_ sender: UIButton) {
-        print("hi")
+    @IBAction func searchButton(_ sender: UIButton, forEvent event: UIEvent) {
+        print(searchTextField.text!)
     }
+    
     
 }
 
