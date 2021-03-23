@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -17,12 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-xB-gEJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-xB-gEJ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="26N-0u-h2i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="7J7-bC-cKo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="9v5-Lv-DvA"/>
+                                    <constraint firstAttribute="width" constant="414" id="hjb-HH-W4S"/>
+                                </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-no-5Zp">
-                                <rect key="frame" x="9" y="39" width="394" height="818"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-no-5Zp">
+                                <rect key="frame" x="0.0" y="44" width="394" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7bP-iU-fy9">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
@@ -40,7 +45,7 @@
                                                 <rect key="frame" x="50" y="0.0" width="294" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bey-fS-8Oi">
                                                 <rect key="frame" x="354" y="1" width="40" height="38"/>
@@ -50,6 +55,11 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8e-a6-VBH"/>
+                                                    <action selector="searchPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgk-1e-MR1"/>
+                                                    <action selector="searchTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O17-zp-4d2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -81,8 +91,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-Zi-46I">
-                                        <rect key="frame" x="296" y="309.5" width="98" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richmond" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-Zi-46I">
+                                        <rect key="frame" x="263" y="309.5" width="131" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -91,8 +101,10 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="4t1-t8-B6U"/>
                                     <constraint firstAttribute="trailing" secondItem="7bP-iU-fy9" secondAttribute="trailing" id="ThR-Lv-efw"/>
                                     <constraint firstItem="7bP-iU-fy9" firstAttribute="leading" secondItem="Ef7-no-5Zp" secondAttribute="leading" id="eGm-l2-8Mu"/>
+                                    <constraint firstAttribute="height" constant="818" id="r7O-Hc-a9W"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -103,13 +115,18 @@
                             <constraint firstItem="uts-Et-vf8" firstAttribute="trailing" secondItem="Ef7-no-5Zp" secondAttribute="trailing" constant="20" id="Fuu-nn-139"/>
                             <constraint firstItem="uts-Et-vf8" firstAttribute="trailing" secondItem="Ef7-no-5Zp" secondAttribute="trailing" id="Mey-Ts-33E"/>
                             <constraint firstItem="Ef7-no-5Zp" firstAttribute="leading" secondItem="uts-Et-vf8" secondAttribute="leading" id="OSm-v4-Yef"/>
+                            <constraint firstItem="BIa-xB-gEJ" firstAttribute="centerY" secondItem="qbh-Bf-VvO" secondAttribute="centerY" id="Xw7-uE-qMR"/>
                             <constraint firstItem="uts-Et-vf8" firstAttribute="bottom" secondItem="Ef7-no-5Zp" secondAttribute="bottom" id="Zsa-1g-8tE"/>
                             <constraint firstItem="Ef7-no-5Zp" firstAttribute="leading" secondItem="qbh-Bf-VvO" secondAttribute="leading" constant="20" id="gC8-Bq-uQe"/>
+                            <constraint firstItem="BIa-xB-gEJ" firstAttribute="centerX" secondItem="qbh-Bf-VvO" secondAttribute="centerX" id="lYE-hp-geH"/>
+                            <constraint firstItem="BIa-xB-gEJ" firstAttribute="centerY" secondItem="qbh-Bf-VvO" secondAttribute="centerY" id="poA-JG-NvZ"/>
+                            <constraint firstItem="BIa-xB-gEJ" firstAttribute="centerX" secondItem="qbh-Bf-VvO" secondAttribute="centerX" id="rdI-zV-8GL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="eg0-Zi-46I" id="3bV-3R-DX7"/>
                         <outlet property="conditionImageView" destination="Zyp-37-yyg" id="vwv-ay-Ne6"/>
+                        <outlet property="searchTextField" destination="kxU-UL-K0W" id="74f-OD-pkF"/>
                         <outlet property="temperatureLabel" destination="fbJ-TT-Fjy" id="f3r-0q-F5u"/>
                     </connections>
                 </viewController>
@@ -119,7 +136,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="662" height="662"/>
+        <image name="background" width="662" height="662"/>
         <image name="cloud.rain" catalog="system" width="128" height="125"/>
         <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
