@@ -20,22 +20,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func searchButtonPressed(_ sender: UIButton, forEvent event: UIEvent) {
+        searchTextField.endEditing(true)
         print(searchTextField.text!)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if searchTextField.text != "" {
-            return true
-        } else {
-            textField.placeholder = "TYpe soomething"
-            return false
-        }
+        searchTextField.endEditing(true)
+        print(searchTextField.text!)
+        return true
     }
 
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        searchTextField.endEditing(true)
-        print(searchTextField.text!)
-        return true;
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "Type something"
+            return false
+        }
     }
 
     func  textFieldDidEndEditing(_ textField: UITextField) {
