@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  ClimateIOS
-//
-//  Created by dl1 on 3/17/21.
-//
 
 import UIKit
 
