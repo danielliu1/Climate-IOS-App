@@ -62,10 +62,10 @@
 		0E73B7F42602119500A7315E /* ClimateIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0E73B7F52602119500A7315E /* AppDelegate.swift */,
 				0E73B80C260211AE00A7315E /* Controller */,
 				0E73B80A260211A200A7315E /* Model */,
 				0E73B80B260211A800A7315E /* View */,
-				0E73B7F52602119500A7315E /* AppDelegate.swift */,
 				0E73B7F72602119500A7315E /* SceneDelegate.swift */,
 				0E73B8002602119600A7315E /* LaunchScreen.storyboard */,
 				0EB82D40260844600064F849 /* dark_background.pdf */,
@@ -79,6 +79,7 @@
 		0E73B80A260211A200A7315E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0E73817D2617316F00186673 /* WeatherManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				0E73B7FB2602119500A7315E /* Main.storyboard */,
-				0E73817D2617316F00186673 /* WeatherManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

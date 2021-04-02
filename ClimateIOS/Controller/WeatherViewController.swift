@@ -8,6 +8,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     
+    var weatherManager = WeatherManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.delegate = self
@@ -34,6 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func  textFieldDidEndEditing(_ textField: UITextField) {
+        let city = searchTextField.text
         searchTextField.text = ""
     }
 }
