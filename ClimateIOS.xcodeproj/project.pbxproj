@@ -16,6 +16,7 @@
 		0EB82D3C260843E00064F849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB82D3B260843E00064F849 /* Assets.xcassets */; };
 		0EB82D41260844600064F849 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB82D3F260844600064F849 /* light_background.pdf */; };
 		0EB82D42260844600064F849 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB82D40260844600064F849 /* dark_background.pdf */; };
+		0ECA07BC26179E7000096E5D /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA07BB26179E7000096E5D /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0EB82D3B260843E00064F849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB82D3F260844600064F849 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
 		0EB82D40260844600064F849 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
+		0ECA07BB26179E7000096E5D /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0E73817D2617316F00186673 /* WeatherManager.swift */,
+				0ECA07BB26179E7000096E5D /* WeatherData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E73B7FA2602119500A7315E /* WeatherViewController.swift in Sources */,
+				0ECA07BC26179E7000096E5D /* WeatherData.swift in Sources */,
 				0E73B7F62602119500A7315E /* AppDelegate.swift in Sources */,
 				0E73817E2617316F00186673 /* WeatherManager.swift in Sources */,
 				0E73B7F82602119500A7315E /* SceneDelegate.swift in Sources */,
