@@ -25,7 +25,6 @@ struct WeatherManager {
                 print(error!)
                 return
             }
-            
             if let safeData = data {
                 self.parseJSON(weatherData: safeData)
             }
@@ -39,7 +38,7 @@ struct WeatherManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
-            print(decodedData.main.temp)
+            print(decodedData.name)
         } catch {
             print(error)
         }
