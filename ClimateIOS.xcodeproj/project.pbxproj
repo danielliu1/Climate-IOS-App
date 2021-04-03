@@ -11,11 +11,11 @@
 		0E73B7F62602119500A7315E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73B7F52602119500A7315E /* AppDelegate.swift */; };
 		0E73B7F82602119500A7315E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73B7F72602119500A7315E /* SceneDelegate.swift */; };
 		0E73B7FA2602119500A7315E /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73B7F92602119500A7315E /* WeatherViewController.swift */; };
-		0E73B7FD2602119500A7315E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E73B7FB2602119500A7315E /* Main.storyboard */; };
 		0E73B8022602119600A7315E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E73B8002602119600A7315E /* LaunchScreen.storyboard */; };
 		0EB82D3C260843E00064F849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB82D3B260843E00064F849 /* Assets.xcassets */; };
 		0EB82D41260844600064F849 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB82D3F260844600064F849 /* light_background.pdf */; };
 		0EB82D42260844600064F849 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB82D40260844600064F849 /* dark_background.pdf */; };
+		0EC17B192618F599006BF50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC17B182618F599006BF50D /* Main.storyboard */; };
 		0ECA07BC26179E7000096E5D /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA07BB26179E7000096E5D /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,12 +25,12 @@
 		0E73B7F52602119500A7315E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E73B7F72602119500A7315E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E73B7F92602119500A7315E /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		0E73B7FC2602119500A7315E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E73B8012602119600A7315E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E73B8032602119600A7315E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EB82D3B260843E00064F849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB82D3F260844600064F849 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
 		0EB82D40260844600064F849 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
+		0EC17B182618F599006BF50D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0ECA07BB26179E7000096E5D /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +90,7 @@
 		0E73B80B260211A800A7315E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0E73B7FB2602119500A7315E /* Main.storyboard */,
+				0EC17B182618F599006BF50D /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 				0EB82D42260844600064F849 /* dark_background.pdf in Resources */,
 				0E73B8022602119600A7315E /* LaunchScreen.storyboard in Resources */,
 				0EB82D3C260843E00064F849 /* Assets.xcassets in Resources */,
-				0E73B7FD2602119500A7315E /* Main.storyboard in Resources */,
+				0EC17B192618F599006BF50D /* Main.storyboard in Resources */,
 				0EB82D41260844600064F849 /* light_background.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0E73B7FB2602119500A7315E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E73B7FC2602119500A7315E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E73B8002602119600A7315E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
