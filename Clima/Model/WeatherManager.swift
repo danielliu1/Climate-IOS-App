@@ -1,5 +1,4 @@
 import Foundation
-//https://api.openweathermap.org/data/2.5/weather?appid=d1222fad79a39a7334f73fbd47ec26a6&units=metric
 
 struct WeatherManager {
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=d1222fad79a39a7334f73fbd47ec26a6&units=metric"
@@ -22,6 +21,7 @@ struct WeatherManager {
             task.resume()
         }
     }
+    
     func handle(data: Data?, response: URLResponse?, error: Error?) {
         if error != nil {
             print(error!)
